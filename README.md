@@ -14,7 +14,7 @@ So, the problem is - I have an class inherited from NSObject, how fast can I per
 
 For example - I have a  testClass (and "strAttr1" is one of the string property), it has three objects, obj1, obj2, obj3.
 
-```
+``` objective-c
 * C : [[OTDB sharedInstance]insertOrUpdateWithModelArr:@[obj1,obj2,obj3] byPrimaryKey:@"strAttr1"];
 * R : [[OTDB sharedInstance]queryWithClass:[testClass class] key:nil value:nil orderByKey:nil desc:YES];
 * U : [[OTDB sharedInstance]insertOrUpdateWithModelArr:@[obj1] byPrimaryKey:@"strAttr1"];
@@ -31,7 +31,7 @@ pod 'OTDB'
 # Example Code: 
 Here is the code of above example:
 
-```
+``` objective-c
     @interface testClass : NSObject
     
     @property (retain, nonatomic) NSString * strAttr1;
